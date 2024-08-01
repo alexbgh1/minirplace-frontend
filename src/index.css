@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dots effects */
+.bg-main {
+  background-image: radial-gradient(#f8f8f81f 1px, transparent 0);
+  background-size: 20px 20px;
+  background-position: -11px -11px;
+}
+
+/* Login / Register effect */
+.switch-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 16px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.switch-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.switch-button.active {
+  opacity: 1;
+}
+
+.switch-button.active::after {
+  /* Adjust line, lower value is closer to the text (center) */
+  width: calc(100% - 10px);
+}
+
+/* Sonner toast */
+[data-close-button="true"] {
+  background-color: #fff;
+  border: 1px solid #12112180;
+}
+
+[data-close-button="true"]:hover {
+  background-color: #f3f3f3;
+  border: 1px solid #12112180;
+}
