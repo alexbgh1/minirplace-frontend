@@ -8,6 +8,7 @@ import { timeAgo } from "../../utils/time-utils";
 import { isTokenExpired } from "../../utils/auth-utils";
 
 import { PixelStats, User } from "../../types";
+import { FRONTEND_PREFIX } from "../../constants/prefix";
 
 import CardHeader from "./CardHeader";
 import CardBody from "./CardBody";
@@ -95,7 +96,7 @@ const UpdatePixel = () => {
       ${isCardOpen ? "h-24 pb-24 opacity-100" : "h-6 pb-6 opacity-50"}
         `}
       >
-        <audio ref={soundRef} src="/sounds/pixel-action-paint.mp3" />
+        <audio ref={soundRef} src={`${FRONTEND_PREFIX}/sounds/pixel-action-paint.mp3`} />
         <section className="flex w-full">
           {/* Card Header*/}
           <div className="w-16">
