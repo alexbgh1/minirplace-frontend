@@ -27,7 +27,7 @@ const ColorPicker = () => {
 
   return (
     <section className="flex flex-row items-center justify-center gap-1 mt-2 mb-8">
-      <audio ref={soundRef} src={`${FRONTEND_PREFIX}/sounds/pixel-action-select.mp3`} />
+      <audio ref={soundRef} src={`sounds/pixel-action-select.mp3`} />
       {loading ? (
         <p>Loading colors...</p>
       ) : (
