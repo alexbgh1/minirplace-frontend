@@ -2,8 +2,6 @@ import Contries from "../../data/countries.json";
 import { useState } from "react";
 import { useAuth } from "../../context/auth-context";
 
-import { toast } from "sonner";
-
 interface Country {
   name: string;
   iso: string;
