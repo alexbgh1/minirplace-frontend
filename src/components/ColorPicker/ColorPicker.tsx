@@ -5,7 +5,6 @@ import SocketContext from "../../context/socket-context";
 import Color from "./Color";
 
 import { Color as ColorProps } from "../../types/Color";
-import { FRONTEND_PREFIX } from "../../constants/prefix";
 
 const ColorPicker = () => {
   const { SocketDispatch } = useContext(SocketContext);
