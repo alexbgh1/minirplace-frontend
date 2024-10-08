@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# Minirplace Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Parte visual del proyecto, considera el uso de React y Typescript para el desarrollo de la aplicación, además de websockets para la comunicación en tiempo real con el backend.
 
-Currently, two official plugins are available:
+## Stack tecnológico
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![React](./readme-utils/react-logo.png) ![Typescript](./readme-utils/typescript-logo.png) ![TailwindCSS](./readme-utils/tailwindcss-logo.png)
 
-## Expanding the ESLint configuration
+## [Preview](https://alexbgh1.github.io/minirplace-frontend/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Preview](./readme-utils/preview.png)
+![Preview 2](./readme-utils/preview-2.png)
 
-- Configure the top-level `parserOptions` property like this:
+## Soporte CSS
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [x] Desktop
+- [x] Tablet
+- [x] Mobile
